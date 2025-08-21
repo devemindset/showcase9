@@ -1,0 +1,73 @@
+@import "tailwindcss";
+/* @import 'bootstrap-icons/font/bootstrap-icons.css'; */
+
+
+
+:root {
+  --source-1 : #0b052b;
+  --background: #ededed;
+  --background-element : var(--source-1); 
+  --background-element-2 : #d4d2d2; 
+  --background-element-3 : white;
+  --text-element : var(--source-1);
+  --text-element-small : #999393;
+  --text-element-2 : 
+#e5e7ec;
+  --btn-text : white;
+  --btn-bg: var(--source-1);
+  --color-foreground: #d4d1c6;
+  --btn-hover : #745718;
+  --text-hover : rgb(95, 41, 146);
+  --color-shadow : rgb(156, 63, 243);
+  --text-active : #836e29;
+  --hero-bg : #d8cca5;
+  --rounded : #836e29; 
+  --text-span : #d4a815;
+  --text-span-2 : #364153;
+  --border-color : #364153;
+  --title-bg : #1c0641;
+  --bg-header : rgb(255, 255, 255);
+  --input-bg : #f8fafc;
+
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-dark: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+@keyframes spinScale {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
